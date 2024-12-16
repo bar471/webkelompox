@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pembelian Kopi</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav>
+  <div class="logo">
+      <!-- Logo Placeholder -->
+  </div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="#catalog">Catalog</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="get_products.html">Stock</a></li>
+    <li><a href="#footer-about">About</a></li>
+    <li><a id="invoice.html" href="invoice.html">Tagihan</a></li>
+    <li><a id="loginBtn">Admin</a></li>
+</ul>
+</nav>
+
+<!-- Tombol Back -->
+<button id="backBtn" class="back-btn">
+  <img src="https://pic.surf/pns" alt="Kembali" />
+</button>
+
+<div class="product-container">
+  <header class="Produk">
+    <img src="https://www.pic.surf/xhd" alt="Product Image">
+  </header>
+  
+  <div class="detailproduk">
+    <h1 id="productName">Arabika</h1>
+    <p id="productDescription">Ciri khas: Rasanya lebih halus, sedikit asam, dan memiliki kompleksitas rasa yang lebih tinggi.</p>
+    <p id="productUsage">Penggunaan: Banyak digunakan untuk kopi filter, espresso, latte, cappuccino, dan berbagai minuman kopi lainnya di coffee shop.</p>
+  </div>
+</div>
+
+<!-- Form Section -->
+<div class="form-container">
+  <form id="coffeeForm">
+    <label for="coffeeType">Pilih Kopi:</label>
+    <select id="coffeeType" name="coffeeType">
+        <option value="Arabika" data-price="20000">Arabika - Rp 20.000</option>
+        <option value="Espresso" data-price="35000">Espresso - Rp 35.000</option>
+        <option value="Latte" data-price="25000">Latte - Rp 25.000</option>
+        <option value="Cappuccino" data-price="30000">Cappuccino - Rp 30.000</option>
+    </select>
+    <br><br>
+
+    <label for="temperature">Pilih Suhu:</label>
+    <select id="temperature" name="temperature">
+        <option value="Hot">Hot</option>
+        <option value="Cold">Cold</option>
+    </select>
+    <br><br>
+
+    <label for="sugar">Pilih Gula:</label>
+    <select id="sugar" name="sugar">
+        <option value="Normal">Normal</option>
+        <option value="Less">Less</option>
+        <option value="No">No</option>
+    </select>
+    <br><br>
+
+    <label for="quantity">Jumlah:</label>
+    <input type="number" id="quantity" name="quantity" min="1" value="1">
+    <br><br>
+
+    <button type="button" id="addToCart">Tambah ke Keranjang</button>
+  </form>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>

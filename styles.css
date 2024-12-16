@@ -1,0 +1,344 @@
+/* Reset basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #011a0e;
+    padding: 10px 20px;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+}
+
+nav .logo-img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+
+.quantity-display {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 0 10px;
+  }
+  
+  .item-details {
+    font-size: 16px;
+    flex-grow: 1;
+    text-align: right;
+    padding-left: 20px;
+  }
+nav a:hover {
+    color: #46cd0c;
+}
+
+/* Style untuk header */
+header {
+    position: relative;
+    height: 50vh;
+    display: flex;
+    justify-content: center; /* Menyusun konten secara horizontal di tengah */
+    align-items: center;     /* Menyusun konten secara vertikal di tengah */
+    overflow: hidden;        /* Menjaga gambar tetap dalam batas radius */
+}
+
+header img {
+    width: 80%;
+    height: 100%;
+    border-radius: 18px;
+    object-fit: cover;
+}
+
+/* Konten header */
+.header-content {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: 18px;
+}
+
+/* Ensure full height for the page */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* .Produk Section Styling */
+/* Styling for the product container */
+.product-container {
+    display: flex;
+    flex-direction: column; /* Vertically align content */
+    align-items: center; /* Center the content horizontally */
+    justify-content: center; /* Center the content vertically */
+    margin-top: 20px; /* Adjust the spacing from the top */
+}
+
+/* Style for Produk section */
+.Produk {
+    width: 100%;
+    height: 50vh; /* Set height to 50% of the viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #f0f0f0; /* Optional: Set a background color */
+}
+
+/* Image styling */
+.Produk img {
+    max-height: 100%; /* Limit image height to 100% of its container */
+    width: auto; /* Maintain aspect ratio */
+}
+
+/* Styling for the product details */
+.detailproduk {
+    margin-top: 20px; /* Space between image and product details */
+    padding: 20px;
+    max-width: 900px; /* Adjust the width of the detail section */
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a shadow for a nicer look */
+    border-radius: 8px; /* Rounded corners */
+    justify-content: center;
+}
+
+
+/* Styling for the form */
+#coffeeForm {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 900px;
+    text-align: center;
+    justify-content: center;
+}
+
+.form-container {
+    margin-top: 30px; /* Space between product details and form */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Menata label untuk elemen form */
+label {
+    font-size: 16px;
+    margin-bottom: 8px;
+    display: block; /* Memastikan label tampil di atas input */
+}
+
+/* Menata elemen input dan select */
+input[type="number"],
+select {
+    width: 100%; /* Lebar elemen input seleksi 100% dari lebar form */
+    padding: 8px;
+    margin: 10px 0; /* Memberi jarak antar elemen */
+    border-radius: 4px;
+    border: 1px solid #ccc; /* Batas dengan warna abu-abu muda */
+    box-sizing: border-box; /* Menjaga padding tidak mempengaruhi ukuran elemen */
+}
+
+
+/* Menata tombol */
+.button{
+    background-color: #c48d20; /* Warna hijau tombol */
+    color: white;
+
+    border: none;
+    cursor: pointer;
+    width: 100%; /* Tombol memenuhi lebar form */
+    font-size: 16px;
+}
+
+/* Efek hover untuk tombol */
+button:hover {
+    background-color: #7d570b; /* Mengubah warna tombol saat disorot */
+}
+
+#addToCart {
+    background-color: #c48d20; /* Warna tombol */
+    color: white; /* Warna teks tombol */
+    border: none; /* Menghilangkan border */
+    cursor: pointer; /* Mengubah pointer saat di-hover */
+    width: 100%; /* Tombol memenuhi lebar container */
+    font-size: 16px; /* Ukuran font */
+    padding: 10px; /* Memberikan padding agar lebih besar */
+    text-align: center; /* Mengatur teks agar rata tengah */
+    border-radius: 5px; /* Membuat sudut tombol lebih membulat */
+    transition: background-color 0.3s ease; /* Efek transisi ketika hover */
+}
+
+#addToCart:hover {
+    background-color: #b77a1f; /* Warna tombol saat di-hover */
+}
+
+.back-btn {
+    position: fixed;  /* Memastikan tombol tetap berada di posisi yang sama meskipun halaman digulir */
+    top: 20px;  /* Posisi tombol dari atas */
+    left: 20px;  /* Posisi tombol dari kiri */
+    background-color: #ffffff;  /* Warna latar belakang tombol */
+    color: white;  /* Warna teks tombol */
+    padding: 15px;  /* Menambahkan padding untuk membuat tombol lebih besar */
+    border: none;  /* Menghapus border tombol */
+    border-radius: 50%;  /* Membuat tombol bulat */
+    cursor: pointer;  /* Menambahkan cursor tangan saat hover */
+    font-size: 20px;  /* Ukuran font tombol */
+    z-index: 1000;  /* Pastikan tombol berada di atas elemen lain */
+    display: flex;  /* Menggunakan flexbox agar gambar rata tengah */
+    justify-content: center;  /* Memusatkan gambar secara horizontal */
+    align-items: center;  /* Memusatkan gambar secara vertikal */
+    width: 60px;  /* Menentukan lebar tombol */
+    height: 60px;  /* Menentukan tinggi tombol */
+}
+
+.back-btn img {
+    width: 50px;  /* Mengatur ukuran gambar */
+    height: auto;  /* Menjaga rasio gambar */
+}
+
+.back-btn:hover {
+    background-color: #27b300;  /* Warna latar belakang tombol saat hover */
+}
+
+
+  
+
+/* Tombol Keranjang */
+.cart-btn img {
+    width: 10px;  /* Ukuran lebar gambar */
+    height: 10px; /* Ukuran tinggi gambar */
+    transition: transform 0.3s ease;
+}
+
+.cart-btn img:hover {
+    transform: scale(1.1);
+}
+
+.quantity-control {
+    display: flex;
+    align-items: center;
+    margin-right: 20px; /* Add margin to separate quantity control and cart button */
+}
+
+/* Kontrol Jumlah */
+.control {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: relative; 
+}
+
+.quantity-control {
+    display: flex;
+    align-items: center;
+}
+
+.quantity {
+    margin: 0 15px;
+    font-size: 20px;
+}
+
+/* Keranjang */
+.cart {
+    display: flex;
+    justify-content: center;
+}
+
+.cart-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute; /* Keeps the button in a fixed position within the control div */
+    right: 0; /* Align the cart button to the right */
+    top: 50%; /* Vertically center the cart button */
+    transform: translateY(-50%); /* Align the button perfectly in the middle */
+}
+
+.cart-btn img {
+    width: 30px;
+    height: 30px;
+}
+
+#cart-summary {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+}
+
+#cart-items {
+    list-style-type: none;
+    padding: 0;
+}
+
+#cart-items li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Cart list styling */
+#cartList {
+    margin-top: 20px;
+    padding: 10px;
+    list-style-type: none;
+    border: 1px solid #ddd;
+    background-color: #fff;
+  }
+  
+  #cartList li {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  #cartList li:last-child {
+    border-bottom: none;
+  }
+  
+  #cartList div {
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 18px;
+  }
+
+  #cartList li {
+    font-size: 14px;
+  }
+
+#total-price {
+    font-size: 18px;
+    font-weight: bold;
+}

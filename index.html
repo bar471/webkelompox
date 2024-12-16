@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Business</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<body>
+    
+    <nav>
+        <div class="logo">
+            
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#catalog">Catalog</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="get_products.html">Stock</a></li>
+            <li><a href="#footer-about">About</a></li>
+            <li><a id="invoice.html" href="invoice.html">Tagihan</a></li>
+            <li><a id="loginBtn">Admin</a></li>
+        </ul>
+    </nav>
+
+
+    <header id="home">
+        <div class="header-content">
+            <img src="https://pic.surf/gc" alt="Logo" class="logodepan">
+            <p>Rasakan ketenangan sejati dengan kopi, makanan, dan camilan lezat yang memanjakan di setiap momen Anda.</p>            </p>
+            <button class="cta-btn" onclick="scrollToAbout()">Selengkapnya >></button>
+        </div>
+    </header>
+
+    <section id="fooddrink">
+        <button class="fd" id="food-btn">
+            <div class="content">
+                <h2>Food</h2>
+                <p>pilih manakanmu hari ini</p>
+            </div>
+            <img src="https://www.pic.surf/ekf" alt="Food" class="food-img">
+        </button>
+
+       
+        <a href="coffe.html" class="dr" id="drink-btn">
+            <div class="content">
+                <h2>Coffee</h2>
+                <p>Nikmati harimu dengan kopi</p>
+            </div>
+            <img src="https://www.pic.surf/9vt" alt="Drink" class="drink-img">
+        </a>
+        
+        
+        
+    </section>
+    
+    
+
+   
+
+
+    
+    
+
+ 
+    <section id="catalog">
+        <h2>Best Seller</h2>
+        <div class="catalog-grid">
+            <div class="catalog-item">
+                <a href="coffe.html">
+                <img src="https://www.pic.surf/rxi" alt="Product 1">
+                <h3>Arabika</h3>
+                <button id="btcoffe" aria-label="Show Coffee Menu">Lihat</button>
+            </a>
+            </div>
+            <div class="catalog-item">
+                <img src="https://www.pic.surf/zncg" alt="Product 2">
+                <h3>Moccachino</h3>
+                <button id="btnoncoffe">Lihat</button>
+            </div>
+            <div class="catalog-item">
+                <img src="https://www.pic.surf/r6d" alt="Product 3">
+                <h3>Lambada</h3>
+                <button id="btfoodsnack">Lihat</button>
+            </div>
+        </div>
+    </section>
+    
+    </section>
+    
+  
+   
+
+    
+    
+
+
+    <div id="tagihanPopup" class="popup">
+        <div class="popup-content">
+            <span class="popup-close" onclick="closeTagihanPopup()">×</span>
+            <h3>Detail Tagihan</h3>
+            <p>Berikut adalah detail pembayaran Anda:</p>
+            <table>
+                <tr>
+                    <td>Item</td>
+                    <td> Produk 1</td>
+                </tr>
+                <tr>
+                    <td>Jumlah</td>
+                    <td> 2</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td> Rp 300.000</td>
+                </tr>
+            </table>
+            <button class="co">checkout
+            </button>
+        </div>
+    </div>
+
+    
+
+
+
+    
+
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span id="closeModal" class="close">&times;</span>
+            <h2>Admin Login</h2>
+            <form id="loginForm">
+                <label for="adminUsername">Username:</label>
+                <input type="text" id="adminUsername" name="username" required><br><br>
+                <label for="adminPassword">Password:</label>
+                <input type="password" id="adminPassword" name="password" required><br><br>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-about">
+                <h4>About Our Company</h4>
+                <p>Kami percaya pada kenikmatan sederhana dalam hidup — secangkir kopi yang nikmat, kue pastry yang hangat, dan suasana yang menyambut. Perjalanan kami dimulai dengan impian untuk menciptakan ruang di mana orang-orang dapat terhubung, bersantai, dan menikmati minuman berkualitas tinggi serta makanan rumahan yang lezat. Dari cangkir pertama yang diseduh hingga saat ini, kami terus berfokus pada pemilihan biji kopi terbaik dan bahan-bahan berkualitas untuk memberikan pengalaman yang benar-benar berkesan. Bergabunglah dengan kami untuk menikmati secangkir kehangatan dan kenyamanan setiap harinya.</p>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p>Email: contact@company.com</p>
+                <p>Phone: +123456789</p>
+            </div>
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <p>Facebook | Twitter | Instagram</p>
+            </div>
+        </div>
+    </footer>
+    
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>
